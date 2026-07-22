@@ -11,10 +11,42 @@
     />
   </head>
   <body>
+    <!-- header -->
+        <header class="header" id="header">
+      <h2 class="logo">Accessories store</h2>
+      <nav class="nav">
+        <li><a href="#" class="home">Home</a></li>
+        <li class="Categories-li">
+          <a href="#">Categories</a>
+          <div class="Categories-popup">
+            <a href="#">phone</a>
+            <a href="#">console</a>
+            <a href="#">games</a>
+            <a href="#">cases</a>
+          </div>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">contact</a></li>
+      </nav>
+      <div class="header-icons">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping Cart"></i>
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    </header>
+
+
     <button class="btn-chat"><i class="fa-solid fa-comments"></i></button>
     <div class="chat-popup">
       <div class="chat-header">
-        <h3>4D4D</h3>
+        <div class="chat-logo">
+          <h3>Chat Bot</h3>
+        </div>
+        <div class="chat-icon">
+          <i class="fas fa-history"></i>
+          <i class="fas fa-comment-medical"></i>
+        </div>
         <button class="close-btn">✕</button>
       </div>
 
@@ -23,63 +55,266 @@
           <p>Hey, I'm 4D4D 👋</p>
           <p>How can I help you?</p>
         </div>
-
-        <div class="chat-user">
-          <p>Need support</p>
-          <p>My account has been blocked</p>
-        </div>
-
-        <div class="chat-AI">
-          <p>Can you tell me what happened?</p>
-        </div>
-
-        <div class="chat-user">
-          <p>I can't login anymore.</p>
-        </div>
-
-        <div class="chat-AI">
-          <p>Did you receive any error message?</p>
-        </div>
-
-        <div class="chat-user">
-          <p>Yes, it says account suspended.</p>
-        </div>
-
-        <div class="chat-AI">
-          <p>Okay, our support team can help with that.</p>
-        </div>
-
-        <div class="chat-user">
-          <p>Thank you.</p>
-        </div>
-
-        <div class="chat-AI">
-          <p>You're welcome 😊</p>
-        </div>
       </div>
 
       <div class="chat-input">
-        <input type="text" placeholder="Type a message..." />
-        <button class="btn-send">➤</button>
+        <p>How can I order</p>
+        <p>How can I recover</p>
+        <p>How can I change</p>
+        <p>How can I replace</p>
+        <p>How can I order</p>
+        <p>How can I recover</p>
+        <p>How can I change</p>
+        <p>How can I replace</p>
       </div>
     </div>
 
-    <header class="header" id="header">
-      <h2 class="logo">Accessories store</h2>
-
-      <nav class="nav">
-        <li><a href="#" class="home">Home</a></li>
-        <li><a id="Categories" href="#">Categories</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">contact</a></li>
-      </nav>
-      <div class="header-icons">
-        <i class="fa-solid fa-heart"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
-        <i class="fa-solid fa-user"></i>
+    <!-- Cart Elements -->
+    <div class="cart-min-d">
+      <div class="cart-d-header">
+        <div class="cart-header">
+          <h1 class="cart-min-title">Cart</h1>
+          <button class="cart-btn-close">✕</button>
+        </div>
       </div>
-    </header>
 
+      <div class="cart-d-Products">
+        <div class="cart-proudct">
+          <img src="photos/1746901126644.jpg" alt="Product" />
+          <div class="cart-proudct-d-text">
+            <h3>Watch Ultra</h3>
+            <div class="cart-item-colors">
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+            </div>
+            <p class="cart-item-size">XL</p>
+            <p>30$</p>
+          </div>
+          <div class="cart-ope">
+            <div class="cart-d-love-delete">
+              <i class="trash">1</i>
+              <i class="fa-solid fa-heart love"></i>
+            </div>
+            <div class="cart-item-count">
+              <button class="btn-mins-cart">-</button>
+              <input type="text" maxlength="1" />
+              <button class="btn-plus-cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-proudct">
+          <img
+            src="photos/062bce5fc7274c7325953cd613e06c1e.jpg"
+            alt="Product"
+          />
+          <div class="cart-proudct-d-text">
+            <h3>Air buds</h3>
+            <div class="cart-item-colors">
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+            </div>
+            <p class="cart-item-size">XL</p>
+            <p>30$</p>
+          </div>
+          <div class="cart-ope">
+            <div class="cart-d-love-delete">
+              <i class="trash">1</i>
+              <i class="fa-solid fa-heart love"></i>
+            </div>
+
+            <div class="cart-item-count">
+              <button class="btn-mins-cart">-</button>
+              <input type="text" maxlength="1" />
+              <button class="btn-plus-cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-proudct">
+          <img
+            src="photos/60f0d327829d14634ebc08854eb28587.jpg"
+            alt="Product"
+          />
+          <div class="cart-proudct-d-text">
+            <h3>Air buds</h3>
+            <div class="cart-item-colors">
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+            </div>
+            <p class="cart-item-size">XL</p>
+            <p>30$</p>
+          </div>
+          <div class="cart-ope">
+            <div class="cart-d-love-delete">
+              <i class="trash">1</i>
+              <i class="fa-solid fa-heart love"></i>
+            </div>
+
+            <div class="cart-item-count">
+              <button class="btn-mins-cart">-</button>
+              <input type="text" maxlength="1" />
+              <button class="btn-plus-cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-proudct">
+          <img
+            src="photos/dedf90b38e98727c29fcf48ac075c005.jpg"
+            alt="Product"
+          />
+          <div class="cart-proudct-d-text">
+            <h3>HeadPhone</h3>
+            <div class="cart-item-colors">
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+            </div>
+            <p class="cart-item-size">XL</p>
+            <p>30$</p>
+          </div>
+          <div class="cart-ope">
+            <div class="cart-d-love-delete">
+              <i class="trash">1</i>
+              <i class="fa-solid fa-heart love"></i>
+            </div>
+
+            <div class="cart-item-count">
+              <button class="btn-mins-cart">-</button>
+              <input type="text" maxlength="1" />
+              <button class="btn-plus-cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-proudct">
+          <img
+            src="photos/WH-CH720N_Product_intro_Pink_05_M .jpg"
+            alt="Product"
+          />
+          <div class="cart-proudct-d-text">
+            <h3>HeadPhone</h3>
+            <div class="cart-item-colors">
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+            </div>
+            <p class="cart-item-size">XL</p>
+            <p>30$</p>
+          </div>
+          <div class="cart-ope">
+            <div class="cart-d-love-delete">
+              <i class="trash">1</i>
+              <i class="fa-solid fa-heart love"></i>
+            </div>
+
+            <div class="cart-item-count">
+              <button class="btn-mins-cart">-</button>
+              <input type="text" maxlength="1" />
+              <button class="btn-plus-cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-proudct">
+          <img
+            src="photos/062bce5fc7274c7325953cd613e06c1e.jpg"
+            alt="Product"
+          />
+          <div class="cart-proudct-d-text">
+            <h3>Air buds</h3>
+            <div class="cart-item-colors">
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+            </div>
+            <p class="cart-item-size">XL</p>
+            <p>30$</p>
+          </div>
+          <div class="cart-ope">
+            <div class="cart-d-love-delete">
+              <i class="trash">1</i>
+              <i class="fa-solid fa-heart love"></i>
+            </div>
+
+            <div class="cart-item-count">
+              <button class="btn-mins-cart">-</button>
+              <input type="text" maxlength="1" />
+              <button class="btn-plus-cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-proudct">
+          <img
+            src="photos/60f0d327829d14634ebc08854eb28587.jpg"
+            alt="Product"
+          />
+          <div class="cart-proudct-d-text">
+            <h3>Air buds</h3>
+            <div class="cart-item-colors">
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+            </div>
+            <p class="cart-item-size">XL</p>
+            <p>30$</p>
+          </div>
+          <div class="cart-ope">
+            <div class="cart-d-love-delete">
+              <i class="trash">1</i>
+              <i class="fa-solid fa-heart love"></i>
+            </div>
+
+            <div class="cart-item-count">
+              <button class="btn-mins-cart">-</button>
+              <input type="text" maxlength="1" />
+              <button class="btn-plus-cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-proudct">
+          <img src="photos/1746901126644.jpg" alt="Product" />
+          <div class="cart-proudct-d-text">
+            <h3>Watch Ultra</h3>
+            <div class="cart-item-colors">
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+              <div class="cart-item-color"></div>
+            </div>
+            <p class="cart-item-size">XL</p>
+            <p>30$</p>
+          </div>
+          <div class="cart-ope">
+            <div class="cart-d-love-delete">
+              <i class="trash">1</i>
+              <i class="fa-solid fa-heart love"></i>
+            </div>
+
+            <div class="cart-item-count">
+              <button class="btn-mins-cart">-</button>
+              <input type="text" maxlength="1" />
+              <button class="btn-plus-cart">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 1 -->
     <section class="se-1">
       <div class="se-1-d-text">
         <h1>HEADPHONE</h1>
@@ -126,15 +361,6 @@
           </div>
         </div>
       </div>
-<h1>Categories</h1>
-<div class="Categories">
-<div class="Categories-product"><i class="fa-solid fa-mobile-screen-button"></i><p>Phone Cover</p></div>
-<div class="Categories-product"><i class="fa-solid fa-heart"></i><p>gameing consoles</p></div>
-<div class="Categories-product"><i class="fa-solid fa-heart"></i><p>Headphone & Airbuds</p></div>
-<div class="Categories-product"><i class="fa-solid fa-heart"></i><p>Smart Watch</p></div>
-<div class="Categories-product"><i class="fa-solid fa-heart"></i><p>Headphone & Airbuds</p></div>
-<div class="Categories-product"><i class="fa-solid fa-heart"></i><p>Smart Watch</p></div>
-</div>
     </section>
     <section class="se-3">
       <h1>Best selling</h1>
@@ -225,9 +451,96 @@
             <i class="fa-solid fa-cart-shopping"></i>Add To Cart
           </button>
         </div>
+        <div class="se-3-card card-up">
+          <div class="se-3-card-img-1"></div>
+          <div class="se-3-card-colors">
+            <div class="se-3-card-color"></div>
+            <div class="se-3-card-color"></div>
+            <div class="se-3-card-color"></div>
+            <div class="se-3-card-color"></div>
+          </div>
+          <div class="se-3-card-d-min-text">
+            <div class="se-3-card-text">
+              <h3>HeadPhone</h3>
+              <p>18$</p>
+            </div>
+            <div class="se-card-love">
+              <i class="fa-solid fa-heart love"></i>
+            </div>
+          </div>
+          <button class="btn-card-shop">
+            <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+          </button>
+        </div>
+        <div class="se-3-card card-down">
+          <div class="se-3-card-img-2"></div>
+          <div class="se-3-card-colors">
+            <div class="se-3-card-color"></div>
+            <div class="se-3-card-color"></div>
+            <div class="se-3-card-color"></div>
+            <div class="se-3-card-color"></div>
+          </div>
+          <div class="se-3-card-d-min-text">
+            <div class="se-3-card-text">
+              <h3>Watch Ultra</h3>
+              <p>30$</p>
+            </div>
+            <div class="se-card-love">
+              <i class="fa-solid fa-heart love"></i>
+            </div>
+          </div>
+          <button class="btn-card-shop">
+            <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+          </button>
+        </div>
+        <div class="se-3-card card-up">
+          <div class="se-3-card-img-3"></div>
+          <div class="se-3-card-colors">
+            <div class="se-3-card-color"></div>
+            <div class="se-3-card-color"></div>
+            <div class="se-3-card-color"></div>
+            <div class="se-3-card-color"></div>
+          </div>
+          <div class="se-3-card-d-min-text">
+            <div class="se-3-card-text">
+              <h3>Air buds</h3>
+              <p>28$</p>
+            </div>
+            <div class="se-card-love">
+              <i class="fa-solid fa-heart love"></i>
+            </div>
+          </div>
+          <button class="btn-card-shop">
+            <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+          </button>
+        </div>
+        <div class="se-3-card card-down">
+          <div class="se-3-card-img-4"></div>
+          <div class="se-3-card-colors">
+            <div class="se-3-card-color"></div>
+            <div class="se-3-card-color"></div>
+            <div class="se-3-card-color"></div>
+            <div class="se-3-card-color"></div>
+          </div>
+
+          <div class="se-3-card-d-min-text">
+            <div class="se-3-card-text">
+              <h3>Air buds</h3>
+              <p>28$</p>
+            </div>
+            <div class="se-card-love">
+              <i class="fa-solid fa-heart love"></i>
+            </div>
+          </div>
+
+          <button class="btn-card-shop">
+            <i class="fa-solid fa-cart-shopping"></i>Add To Cart
+          </button>
+        </div>
+        
       </div>
       <div class="se-3-slider">
-        <button class="se-3-slider-btn Arrow-left" ><</button>
+        <button class="se-3-slider-btn Arrow-left"><</button>
         <div class="slid-1 slid-circle"></div>
         <div class="slid-2 slid-circle"></div>
         <div class="slid-3 slid-circle"></div>
@@ -235,7 +548,6 @@
         <button class="se-3-slider-btn Arrow-right">></button>
       </div>
     </section>
-
     <script src="script.js"></script>
   </body>
 </html>
