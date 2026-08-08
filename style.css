@@ -241,6 +241,7 @@ right: 0;
 .cart-d-header{
     width: 100%;
   height: 50px;
+
 }
 .cart-header{
 width:450px;
@@ -571,8 +572,7 @@ transition: 0.5s  ease-in-out;
   display: flex;
   justify-content: center;
   gap: 10px;
-
-  width: 200px;
+  width:  80%;
   height: auto;
   position: absolute;
   bottom: 15px;
@@ -616,7 +616,7 @@ transition: 0.5s  ease-in-out;
 }
 
 /* phone */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   header {
     background-color: black;
   }
@@ -645,7 +645,10 @@ transition: 0.5s  ease-in-out;
   }
 
   .se-1-d-text h1 {
-    font-size: 35px;
+    font-size: 25px;
+  }
+  .se-1-d-text h2 {
+    font-size: 20px;
   }
   .se-1-d-text p {
     font-size: 15px;
@@ -653,10 +656,21 @@ transition: 0.5s  ease-in-out;
   .se-3-card-down {
     margin-top: 0px;
   }
+  .chat-popup{
+
+    width: 90%;
+    height: 400px;
+  }
+  .cart-min-d{
+    width: 100%;
+  }
+  .cart-header{
+    width: 100%;
+  }
 }
 
 /* tablet */
-@media (min-width: 601px) and (max-width: 843px) {
+@media (min-width: 501px) and (max-width: 843px) {
   .se-1 {
     background-size: cover;
   }
