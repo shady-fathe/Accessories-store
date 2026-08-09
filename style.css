@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+
+
+
+}
 body {
   background-color: black;
   color: aliceblue;
@@ -436,6 +441,7 @@ border: none;
 .se-2-d-text {
   display: flex;
   flex-direction: column;
+width: auto;
 }
 
 .se-3 {
@@ -652,6 +658,15 @@ transition: 0.5s  ease-in-out;
   }
   .se-1-d-text p {
     font-size: 15px;
+  }
+  .se-2-d-text{
+width: 60%;
+  }
+  .se-2-d-text h3{
+font-size: 15px; 
+  }
+  .se-2-d-text p{
+font-size: 13px; 
   }
   .se-3-card-down {
     margin-top: 0px;
